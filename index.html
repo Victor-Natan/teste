@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo_img.enc" type="image/png" class="logo">
+    <title>Magia Herbal</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./img/logo_img.jpg" alt="Logo Magia Herbal" class="logo_imagem">
+            <h1 class="logo_texto">Magia Herbal</h1>
+        </div>
+
+        <div class="links_cabecalho">
+            
+            <a href="./index.html" class="home_texto link_cabecalho">Home</a>
+            
+            <a href="./sobrenos.html" rel="noopener noreferrer" class="sobrenos_texto link_cabecalho">Sobre Nós</a>
+            
+            <a href="" class="promocao_texto link_cabecalho">Promoções</a>
+        </div>
+        
+    </header>
+
+    <main class="carrossel">
+        <h2 class="carrossel__titulo">Produtos da Loja</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=canela">
+                    <img src="img/canela_img.jpg"
+                    alt="Imagem Magia Herbal"><p class="produto_texto">Canela</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=lavanda"><img src="img/lavanda_img.jpg"
+                    alt="Imagem Magia Herbal"><p class="produto_texto">Lavanda</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=incenso"><img src="img/incenso_img.jpg"
+                    alt="Imagem Magia Herbal"><p class="produto_texto">Incenso</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=papelaria"><img src="img/papelaria_img.jpg" alt="Imagem Mag  ia Herbal"><p class="produto_texto">Papelaria</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=manjericao"><img src="img/manjericao_img.jpg" alt="Imagem Mag ia Herbal"><p class="produto_texto">Manjericão</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=vela"><img src="img/vela_img.jpg" alt="Imagem Magia Herbal"><p class="produto_texto">Vela</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=eucaplito"><img src="img/eucalipto_img.jpg" alt="Imagem Magia Herbal"><p class="produto_texto">Eucaplito</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=palo"><img src="img/palo_img.jpg" alt="Imagem Magia Herbal"><p class="produto_texto">Palo Santo</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="produto.html?produto=anis"><img src="img/anis_img.jpg" alt="Imagem Magia Herbal"><p class="produto_texto">Anis <br>Estrelado</p>
+                    </a>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </main>
+        
+    <footer class="rodape">
+        <div class="texto">
+            <p class="texto_descritivo">Transforme sua energia com a sabedoria da natureza e do universo.
+            <br>-🌱 Ervas,óleos essenciais, incensos naturais e muitos outros produtos naturais.
+            <br>-🐉Envio rápido e seguro para toda a Curitiba e região.
+            <br>-💫 Cada produto é cuidadosamente selecionado para apoiar sua jornada de autoconhecimento e equilíbrio energético.</p>
+        </div>    
+        <div class="contatos">
+            <h1>Contatos:</h1>
+            <div class="instagram_link">
+                <a href="https://www.instagram.com/magias_herbais/" class="instagram_link_texto"><img src="./img/logo_instagram.png" alt="" class="logo_instagram">Instagram</a>
+            </div>
+            <div class="whatsapp_link">
+                <a href="https://api.whatsapp.com/message/2PO5GTU4IDKYG1?autoload=1&app_absent=0" class="whatsapp_link_texto"><img src="./img/logo_whatsapp.png" alt="" class="logo_whatsapp">Whatsapp</a>
+            </div>    
+            <div class="telefone_link">
+                <p href="https://api.whatsapp.com/message/2PO5GTU4IDKYG1?autoload=1&app_absent=0" class="telefone_link_texto"><img src="./img/logo_telefone.png" alt="" class="logo_telefone">+55 41 8834-4759</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <body>
+        
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    1000: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        </script>
+    </body>
+    
+    </html>
+</body>
+</html>

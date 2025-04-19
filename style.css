@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-principal: #f7f4eb;
+    --cor-secundaria: #587359;
+    --cor-terciaria: #faf5ea;
+    --cor-hover-seta: rgba(6, 104, 6, 0.205);
+    --cor-fundo-hover: rgba(2, 68, 2, 0.205);
+}
+
+
+
+body{
+    background-color: var(--cor-principal);
+    background-image: url(./img/imagem_fundo.png);
+    box-sizing: border-box;
+    width: 100vh;
+}
+
+.cabecalho{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    width: 197.4vh;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0;
+    
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 3rem;
+}
+
+.logo_imagem{
+    width:15%;
+    border-radius: 100%;
+}
+
+.logo_texto{
+    color: var(--cor-terciaria);
+    font-size: 3em;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.links_cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    padding: 0 0 0 30rem;
+    margin: 0;
+}
+
+.link_cabecalho {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 2em;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    
+    padding: 0.5em;
+    border-radius: 100%;
+    background-color: transparent; /* espaço já reservado */
+}
+
+.link_cabecalho:hover {
+    transform: scale(1.25);
+    background-color: var(--cor-hover-seta);
+}
+
+
+.carrossel{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 180vh;
+padding: 3rem 0 3rem 9rem;
+gap: 2rem;
+}
+
+.carrossel__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 1em 0.5em 0;
+}
+
+.swiper{
+    width: 50%;
+    position: relative;
+    width: 170vh;
+    padding: auto;
+
+}
+
+.swiper-wrapper{
+    gap: 10px;
+}
+
+.swiper-slide{
+    color: var(--cor-secundaria);
+    font-size: 4em;
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.swiper-slide a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--cor-secundaria);
+    z-index: 10;
+    top: 19em;
+    bottom: 19em;
+}
+
+
+.swiper-button-prev {
+    left: 0;
+
+}
+.swiper-button-next {
+    right: 0;
+
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--cor-hover-seta);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 80%; 
+    width: 4%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.swiper-scrollbar{
+    display: none;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: var(--cor-secundaria);
+    width: 192.1vh;
+    height: auto;
+    border-top: 5px solid var(--cor-secundaria);
+}
+
+.texto {
+    flex: 2;
+    max-width: 50%;
+    color: var(--cor-terciaria);
+    text-align: left;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.contatos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-terciaria);
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7em;
+    border-radius: 20px;
+    padding: 0 2rem 0 5rem;
+}
+
+.instagram_link, .whatsapp_link, .telefone_link {
+    margin-top: 10px;
+}
+
+.instagram_link_texto, .whatsapp_link_texto {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.telefone_link_texto{
+    font-size: 0.8em;
+}
+
+.logo_instagram, .logo_whatsapp, .logo_telefone {
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/*Sites dos produtos*/
+.conteudo-produto{
+    background-image: url(/img/imagem_fundo.png);
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10rem 0 10rem 33rem;
+    width: 100%;
+}
+
+.sobre__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.sobre__texto{
+    display: flex;
+    align-items: center;
+    color: var(--cor-secundaria);
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem 0 5rem 40rem;
+    background-color: var(--cor-fundo-hover);
+    gap: 5rem;
+}
+
+.produtos__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 0 15rem;
+    width: 100%;
+
+}
+
+.produtos__coluna{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+
+}
+
+.produtos__descricao{
+    display: flex;
+    align-items: center;
+    color: var(--cor-secundaria);
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    gap: 1rem;
+}
+
+
+
+.produto__imagem{
+    width: 20rem;
+}
+
+/* Adicione isso ao final do seu style.css */
+
+@media only screen and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    .cabecalho {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        padding: 0;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo_imagem {
+        width: 20%;
+    }
+
+    .logo_texto {
+        font-size: 2em;
+    }
+
+    .links_cabecalho {
+        padding: 1rem 0 0 0;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .link_cabecalho {
+        font-size: 1.5em;
+    }
+
+    .carrossel {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .carrossel__titulo {
+        font-size: 2.5rem;
+        padding: 0.5em 0;
+    }
+
+    .swiper {
+        width: 90%;
+        padding: 0;
+    }
+
+    .swiper-wrapper {
+        gap: 0;
+    }
+
+    .swiper-slide {
+        font-size: 2em;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 30px;
+        width: 30px;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Mostrar apenas 1 slide por vez em mobile */
+    .swiper-slide {
+        width: 100% !important;
+    }
+
+    .rodape {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .texto {
+        max-width: 90%;
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .contatos {
+        padding: 0;
+        font-size: 1.3em;
+    }
+
+    /* Ajustes para as páginas de produtos */
+    .conteudo-produto{
+        background-image: url(/img/imagem_fundo.png);
+    }
+
+    .titulo{
+        color: var(--cor-secundaria);
+        font-family: "Libre Caslon Text", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3em;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .sobre {
+        padding: 2rem 1rem;
+        width: auto;
+    }
+    
+    .sobre__titulo {
+        font-size: 2.5rem;
+    }
+
+    .sobre__texto {
+        font-size: 1.5em;
+    }
+
+    .sobre__texto strong{
+        font-size: 2rem;
+    }
+
+    .produtos {
+        margin: 2rem 1rem;
+        padding: 1rem;
+    }
+
+    .produtos__titulo {
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    .produtos__coluna {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .produtos__descricao {
+        font-size: 1.5em;
+        flex-direction: column;
+    }
+
+    .titulo_sessão_produto{
+        color: var(--cor-secundaria);
+        font-family: "Libre Caslon Text", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3em;
+    }
+
+    .texto-sobre-imagem{
+        color: var(--cor-secundaria);
+        font-family: "Libre Caslon Text", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    .produto__imagem {
+        width: 15rem;
+    }
+}
