@@ -342,7 +342,7 @@ gap: 2rem;
     }
 
     .link_cabecalho {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .carrossel {
@@ -351,7 +351,7 @@ gap: 2rem;
     }
 
     .carrossel__titulo {
-        font-size: 60px;
+        font-size: 2rem;
         padding: 0.5em 0;
     }
 
@@ -426,6 +426,8 @@ gap: 2rem;
     .sobre {
         padding: 2rem 1rem;
         width: auto;
+        text-transform: uppercase;
+
     }
     
     .sobre__titulo {

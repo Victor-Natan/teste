@@ -35,31 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       lavanda: {
         produto: `Lavanda`,
-        titulo: `A magia da Canela no dia a dia<br><br>`,
+        titulo: `A magia da Lavanda no dia a dia<br><br>`,
         beneficios: [
-          `<strong>Atrai</strong>`,
-          `Sucesso Financeiro`,
-          `Paixão nos Relacionamentos`,
-          `Sucesso em Empreendimentos`,
-          `Prosperidade`,
-          `Boas Energias<br><br>`,
-          `<strong>Afasta</strong>`,
-          `Falta de Dinheiro`,
-          `Dificuldade nos Negócios`,
-          `Olhado-Mau`,
-          `Falta de Oportunidades`,
-          `Estagnação<br><br>`
+          `<strong>Benefícios</strong>`,
+          `Relaxamento: O aroma suave da lavanda ajuda a acalmar a mente e reduzir o estresse. perfeito para aqueles momentos de autocuidado!<br>`,
+          `Sono tranquilo: coloque um sachê de lavanda no travesseiro e tenha noites de sono mais profundas e reparadoras.<br>`,
+          `Equilíbrio emocional: a lavanda é conhecida por suas propriedades que promovem a paz interior e a clareza mental.<br>`,
+          
         ],
         titulo_sessão_produto: `PRODUTOS`,
         texto_descritivo: [
-            `<br><br>FORTUNA e PODER`,
-            `<br><br>Incenso da bruxa`,
-            `<br><br>Wax Bars`,
-            `<br><br>Momento Aconchego`,
-            `<br><br>Banho e Escalda Pés`,
-            `<br><br>Chá Amor`,
-            `<br><br>Spray Energético`,
-            `<br><br>Chá Bruxa`,
+            `<br><br>velas aromáticas`,
+            `<br><br>chás fitoenergéticos`,
+            `<br><br>intuição e paz`,
+            `<br><br>Wax bars`,
+            `<br>A wax bars é uma pastilha de cera vegetal aromatizada para perfurmar o ambiente basta quebrar um pedacinho e adicioná-lo à um rechaud de cerâmica ou aromatizador de tomada para derreter e perfurmar o ambiente.`,
         ]
       },
       
